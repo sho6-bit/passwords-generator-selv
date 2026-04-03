@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Karla", sans-serif;
+}
+
+.password-generator {
+    max-width: 550px;
+    max-height: 550px;
+    background: #1F2937;
+    margin: 64px auto;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    padding-left: 52px;
+    padding-right: 52px;
+}
+
+.title {
+    width: 372px;
+    height: 108px;
+    margin-bottom: 60px;
+}
+h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #10B981;
+}
+
+p {
+    color: #D5D4D8;
+    font-size: 20px;
+}
+
+#password-length {
+    width: 15%;
+    height: 39px;
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 16px 3px 15px;
+    margin-top: 30px;
+    color: #55F991;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.checkboxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0 ; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #10B981;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#generate-btn {
+    margin-top: 31px;
+    margin-bottom: 35px;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    color: #ffffff;
+    font-weight: medium;
+    font-size: 16px;
+}
+
+#generate-btn:hover {
+    background: black;
+}
+
+hr {
+    border: none;
+    min-width: 446px;
+    height: 2px;
+    background-color: #2F3E53;
+}
+
+.generated-passwords {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+#first-password, #second-password {
+    min-width: 211px;
+    height: 39px;
+    font-size: 16px;
+    background: #273549;
+    text-align: center;
+    align-content: center;
+    color: #55F991;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 16px 3px 15px;
+    margin-top: 35px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
